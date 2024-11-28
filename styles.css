@@ -646,4 +646,52 @@ nav ul li a.active::after {
 .education-list li:hover {
     transform: translateX(10px);
     box-shadow: 0 5px 15px rgba(232, 67, 147, 0.2);
+}
+
+/* Базовые адаптивные настройки */
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+/* Медиа-запросы для разных устройств */
+
+/* Для планшетов */
+@media screen and (max-width: 768px) {
+    .container {
+        width: 95%;
+        padding: 0 15px;
+    }
+    
+    .nav-menu {
+        flex-direction: column;
+    }
+    
+    .content {
+        flex-direction: column;
+    }
+}
+
+/* Для мобильных устройств */
+@media screen and (max-width: 480px) {
+    h1 {
+        font-size: 24px;
+    }
+    
+    .nav-menu {
+        padding: 10px;
+    }
+    
+    .content {
+        padding: 10px;
+    }
+    
+    .button {
+        width: 100%;
+        margin: 5px 0;
+    }
 } 
