@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Кирилл Антонов - Python Разработчик</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="#about">Обо мне</a></li>
+                <li><a href="#skills">Навыки</a></li>
+                <li><a href="#projects">Проекты</a></li>
+                <li><a href="#education">Образование</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="hero">
+            <div class="container">
+                <h2>Python Разработчик</h2>
+            </div>
+        </section>
+
+        <section id="about">
+            <div class="container">
+                <h2>Обо мне</h2>
+                <p>Python-разработчик с опытом создания высоконагруженных веб-приложений и систем автоматизации. Специализируюсь на разработке асинхронных приложений и интеграционных решений. Имею опыт работы с современными инструментами разработки и методологиями.</p>
+                <div class="contacts">
+                    <p><i class="fas fa-envelope"></i> antonovkirill247@gmail.com</p>
+                    <p><i class="fas fa-phone"></i> +79156562250</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="skills">
+            <div class="container">
+                <h2>Ключевые навыки</h2>
+                <div class="skills-grid">
+                    <div class="skill-category">
+                        <h3>Языки программирования</h3>
+                        <ul>
+                            <li>Python (основной язык)</li>
+                            <li>SQL</li>
+                            <li>JavaScript/TypeScript (базовые)</li>
+                        </ul>
+                    </div>
+                    <div class="skill-category">
+                        <h3>Web Frameworks</h3>
+                        <ul>
+                            <li>FastAPI</li>
+                            <li>Quart</li>
+                            <li>Flask</li>
+                            <li>Django</li>
+                        </ul>
+                    </div>
+                    <div class="skill-category">
+                        <h3>Telegram Боты</h3>
+                        <ul>
+                            <li>python-telegram-bot</li>
+                            <li>telebot</li>
+                        </ul>
+                    </div>
+                    <div class="skill-category">
+                        <h3>HTTP и Асинхронность</h3>
+                        <ul>
+                            <li>httpx</li>
+                            <li>asyncio</li>
+                            <li>aiohttp</li>
+                            <li>websockets</li>
+                        </ul>
+                    </div>
+                    <div class="skill-category">
+                        <h3>Базы данных</h3>
+                        <ul>
+                            <li>SQLAlchemy</li>
+                            <li>PostgreSQL</li>
+                            <li>Redis</li>
+                            <li>Pydantic</li>
+                        </ul>
+                    </div>
+                    <div class="skill-category">
+                        <h3>DevOps навыки</h3>
+                        <ul>
+                            <li>Docker</li>
+                            <li>Docker Compose</li>
+                            <li>CI/CD</li>
+                            <li>Git</li>
+                        </ul>
+                    </div>
+                    <div class="skill-category">
+                        <h3>Тестирование</h3>
+                        <ul>
+                            <li>pytest</li>
+                            <li>unittest</li>
+                            <li>mypy</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="projects">
+            <div class="container">
+                <h2>Проекты</h2>
+                <div class="project-cards">
+                    <div class="project-card">
+                        <h3>Система управления домофонами через Telegram</h3>
+                        <p class="tech-stack">Python, python-telegram-bot, FastAPI, Quart, httpx, Docker, Redis Streams, WebSocket</p>
+                        <div class="project-description">
+                            <p>Комплексное решение для ООО "ИНСИС", включающее:</p>
+                            <h4>Основной Telegram-бот:</h4>
+                            <ul>
+                                <li>Авторизация пользователей</li>
+                                <li>Управление доступом к домофонам</li>
+                                <li>Получение снимков с камер</li>
+                                <li>Асинхронная обработка webhook-уведомлений</li>
+                            </ul>
+                            <h4>Webhook-сервер для обработки уведомлений:</h4>
+                            <ul>
+                                <li>Асинхронная обработка входящих вызовов</li>
+                                <li>Интеграция с Telegram API</li>
+                                <li>Отправка уведомлений пользователям</li>
+                            </ul>
+                            <h4>Особенности реализации:</h4>
+                            <ul>
+                                <li>Микросервисная архитектура на Docker</li>
+                                <li>Асинхронная обработка событий</li>
+                                <li>Горизонтальное масштабирование</li>
+                                <li>CI/CD через GitLab</li>
+                                <li>Мониторинг через Prometheus + Grafana</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="project-card">
+                        <h3>Telegram Такси-Сервис "RideNoW"</h3>
+                        <p class="tech-stack">Python, python-telegram-bot, FastAPI, PostgreSQL, Redis, Yandex Maps API, Docker, WebSocket</p>
+                        <div class="project-description">
+                            <p>Комплексная система заказа такси через Telegram, включающая:</p>
+                            <h4>Основной бот для заказа такси:</h4>
+                            <ul>
+                                <li>Авторизация через номер телефона</li>
+                                <li>Интеграция с картами для выбора адресов</li>
+                                <li>Отслеживание местоположения водителя</li>
+                                <li>Встроенная платежная система</li>
+                                <li>История поездок</li>
+                            </ul>
+                            <h4>Серверная часть:</h4>
+                            <ul>
+                                <li>Real-time обновление статуса заказа</li>
+                                <li>Обработка местоположения водителей</li>
+                                <li>Push-уведомления о прибытии такси</li>
+                                <li>Интеграция с платёжным шлюзом</li>
+                            </ul>
+                            <h4>API клиент для интеграции:</h4>
+                            <ul>
+                                <li>Асинхронные HTTP запросы</li>
+                                <li>Обработка ошибок и retry-механизмы</li>
+                                <li>Кэширование запросов</li>
+                                <li>Типизация данных через Pydantic</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="education">
+            <div class="container">
+                <h2>Образование и сертификаты</h2>
+                <ul class="education-list">
+                    <li>Курс "Асинхронное программирование и FastAPI" — Stepik (2022)</li>
+                    <li>Сертификат AWS Certified Developer – Associate (2023)</li>
+                </ul>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="contact-info">
+                    <h3>Контактные данные</h3>
+                    <p><i class="fas fa-envelope"></i> antonovkirill247@gmail.com</p>
+                    <p><i class="fas fa-phone"></i> +79156562250</p>
+                </div>
+                <p class="copyright">&copy; 2024 Кирилл Антонов</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html> 
