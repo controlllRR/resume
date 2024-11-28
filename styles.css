@@ -121,7 +121,6 @@ nav ul li a:hover {
 /* Hero section */
 #hero {
     min-height: 100vh;
-    height: auto;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -130,7 +129,8 @@ nav ul li a:hover {
     color: white;
     position: relative;
     overflow: hidden;
-    padding: 15% 0;
+    margin: 0;
+    padding: 0;
 }
 
 #hero::before {
@@ -167,15 +167,16 @@ nav ul li a:hover {
 }
 
 #hero h2 {
+    font-size: 3em;
     position: relative;
-    z-index: 1;
+    z-index: 2;
+    margin: 0;
+    padding: 20px;
     background: linear-gradient(45deg, #fff, #fd79a8);
     -webkit-background-clip: text;
     background-clip: text;
     color: transparent;
-    animation: gradientText 3s infinite;
-    font-size: 2em;
-    padding: 0 1rem;
+    text-shadow: none;
 }
 
 @keyframes gradientText {
