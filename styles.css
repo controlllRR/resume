@@ -4,7 +4,7 @@
     --accent-color: #fd79a8;
     --text-color: #2d3436;
     --background-color: #fff0f6;
-    --container-width: 1200px;
+    --container-width: 90%;
     --card-shadow: 0 10px 20px rgba(232, 67, 147, 0.1);
     --transition-speed: 0.3s;
     --gradient-1: linear-gradient(45deg, var(--secondary-color), var(--accent-color));
@@ -24,6 +24,7 @@ body {
     line-height: 1.6;
     color: var(--text-color);
     background-color: var(--background-color);
+    font-size: 16px;
 }
 
 body::before {
@@ -118,7 +119,8 @@ nav ul li a:hover {
 
 /* Hero section */
 #hero {
-    height: 100vh;
+    min-height: 100vh;
+    height: auto;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -127,6 +129,7 @@ nav ul li a:hover {
     color: white;
     position: relative;
     overflow: hidden;
+    padding: 15% 0;
 }
 
 #hero::before {
@@ -170,6 +173,8 @@ nav ul li a:hover {
     background-clip: text;
     color: transparent;
     animation: gradientText 3s infinite;
+    font-size: 2em;
+    padding: 0 1rem;
 }
 
 @keyframes gradientText {
@@ -188,12 +193,13 @@ nav ul li a:hover {
     background: rgba(255, 255, 255, 0.8);
     backdrop-filter: blur(10px);
     border: 1px solid var(--glass-border);
-    padding: 2rem;
+    padding: 5%;
     border-radius: 15px;
     box-shadow: var(--card-shadow);
     transition: transform var(--transition-speed) ease;
     position: relative;
     overflow: hidden;
+    margin-bottom: 5%;
 }
 
 .skill-category::before {
@@ -267,6 +273,8 @@ nav ul li a:hover {
     transition: all var(--transition-speed) ease;
     position: relative;
     overflow: hidden;
+    width: 100%;
+    margin-bottom: 5%;
 }
 
 .project-card::before {
@@ -398,7 +406,7 @@ footer::after {
     z-index: 1;
     background: rgba(255, 255, 255, 0.1);
     backdrop-filter: blur(10px);
-    padding: 2rem;
+    padding: 5%;
     border-radius: 15px;
     border: 1px solid var(--glass-border);
 }
