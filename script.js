@@ -1,3 +1,40 @@
+document.querySelector('.nav-toggle').addEventListener('click', function() {
+    const nav = document.querySelector('nav');
+    const overlay = document.querySelector('.overlay');
+    
+    this.classList.toggle('active');
+    nav.classList.toggle('active');
+    
+    // Создаем оверлей если его нет
+    if (!overlay) {
+        const newOverlay = document.createElement('div');
+        newOverlay.className = 'overlay';
+        document.body.appendChild(newOverlay);
+        
+        // Добавляем обработчик клика по оверлею
+        newOverlay.addEventListener('click', () => {
+            nav.classList.remove('active');
+            this.classList.remove('active');
+            newOverlay.classList.remove('active');
+        });
+    }
+    
+    // Переключаем класс active у оверлея
+    document.querySelector('.overlay').classList.toggle('active');
+});
+
+// Закрываем меню при клике по пункту меню
+document.querySelectorAll('nav a').forEach(link => {
+    link.addEventListener('click', () => {
+        document.querySelector('nav').classList.remove('active');
+        document.querySelector('.nav-toggle').classList.remove('active');
+        const overlay = document.querySelector('.overlay');
+        if (overlay) {
+            overlay.classList.remove('active');
+        }
+    });
+});
+
 // Плавная прокрутка к разделам
 document.querySelectorAll('nav a').forEach(anchor => {
     anchor.addEventListener('click', function(e) {
